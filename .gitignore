@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# 가상환경
+venv/
+env/
+.venv/
+ENV/
+
+# 환경변수
+.env
+
+# 데이터베이스
+*.db
+*.sqlite3
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 테스트/커버리지
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# 로그
+*.log
+logs/
+
+# Claude / OMC
+.omc/
+.claude/
+
+# Node (혹시 모를 프론트 추가 대비)
+node_modules/
+
+# 마이그레이션 버전 파일 (필요 시 제외)
+# alembic/versions/
