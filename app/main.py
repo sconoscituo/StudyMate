@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
 from app.database import create_tables
-from app.routers import quiz, users
+from app.routers import quiz, users, flashcards
 
 
 @asynccontextmanager
@@ -35,6 +35,7 @@ app.add_middleware(
 # 라우터 등록
 app.include_router(users.router)
 app.include_router(quiz.router)
+app.include_router(flashcards.router, prefix="/api/v1")
 
 
 @app.get("/", tags=["health"])

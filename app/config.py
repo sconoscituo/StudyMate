@@ -24,6 +24,10 @@ class Settings(BaseSettings):
     app_name: str = "StudyMate"
     app_version: str = "0.1.0"
 
+    # 포트원(PortOne) 결제 연동
+    portone_api_key: str = ""
+    portone_api_secret: str = ""
+
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
